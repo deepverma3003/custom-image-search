@@ -59,7 +59,6 @@ app.get('/api/imagesearch/:query', function(req, res){
 
 });
 
-
 app.get('/api/latest/imagesearch', function(req, res){
 	pg.connect( connectionString, function(err, client, done){
 		if(err){
@@ -82,7 +81,6 @@ app.get('/api/latest/imagesearch', function(req, res){
 	});
 
 });
-
 
 var port = 3000 || 8080;
 
